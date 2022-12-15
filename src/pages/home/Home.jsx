@@ -9,8 +9,8 @@ import { useJsApiLoader } from "@react-google-maps/api"
 // const API_KEY = process.env.REACT_APP_API_KEY;
 // console.log(API_KEY);
 const defaultcenter = {
-  lat: 62.036219,
-  lng: 129.767991
+  lat: 63.57281,
+  lng: 125.21271
 };
 
 const libraries = ['places']

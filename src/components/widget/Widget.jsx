@@ -4,9 +4,37 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import {useObject} from "react-firebase-hooks/database";
+import {ref} from "firebase/database";
+import {db} from "../../firebase";
+
 
 const Widget = ({ type }) => {
   let data;
+  const [levelwater001] = useObject(ref(db, 'id/001/levelwater'));
+  const [levelcrit001] = useObject(ref(db, 'id/001/levelcrit'));
+  const [lat001] = useObject(ref(db, 'id/001/lat'));
+  const [lon001] = useObject(ref(db, 'id/001/lng'));
+  const [title001] = useObject(ref(db, 'id/001/title'));
+
+
+  const [levelwater002] = useObject(ref(db, 'id/002/levelwater'));
+  const [levelcrit002] = useObject(ref(db, 'id/002/levelcrit'));
+  const [lat002] = useObject(ref(db, 'id/002/lat'));
+  const [lon002] = useObject(ref(db, 'id/002/lng'));
+  const [title002] = useObject(ref(db, 'id/002/title'));
+
+  const [levelwater003] = useObject(ref(db, 'id/003/levelwater'));
+  const [levelcrit003] = useObject(ref(db, 'id/003/levelcrit'));
+  const [lat003] = useObject(ref(db, 'id/003/lat'));
+  const [lon003] = useObject(ref(db, 'id/003/lng'));
+  const [title003] = useObject(ref(db, 'id/003/title'));
+
+  const [levelwater004] = useObject(ref(db, 'id/004/levelwater'));
+  const [levelcrit004] = useObject(ref(db, 'id/004/levelcrit'));
+  const [lat004] = useObject(ref(db, 'id/004/lat'));
+  const [lon004] = useObject(ref(db, 'id/004/lng'));
+  const [title004] = useObject(ref(db, 'id/004/title'));
 
   //temporary
   const amount = 100;
